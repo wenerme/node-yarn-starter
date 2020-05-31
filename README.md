@@ -16,9 +16,10 @@ Yarn2 with NextJS and Gitlab CI
       - Universal API Handler
         - Workaround Vercel 12 Lambada Limit
         - Easier to control apis
-    - [ ] Jest
+    - Jest
   - ui
-    - [ ] Storybook
+    - Jest
+    - Storybook 6
 - typescript
 - eslint
 - prettier
@@ -30,9 +31,13 @@ Yarn2 with NextJS and Gitlab CI
 ## Start
 
 ```bash
-# Local Start
-yarn build
-yarn start
+# Local Dev
+# http://localhost:3000/
+yarn dev
+
+# ui - storybook dev
+# http://localhost:6006/
+yarn storybook:dev
 
 # Production Start
 docker run --rm -it -e PORT=3000 -p 3000:3000 registry.gitlab.com/wenerme/yarn-berry-next-starter:master
