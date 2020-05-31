@@ -4,7 +4,8 @@ Yarn2 with NextJS and Gitlab CI
 
 - Gitlab [wenerme/yarn-berry-next-starter](https://gitlab.com/wenerme/yarn-berry-next-starter) Mirrored from Github
   - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/yarn-berry-next-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/yarn-berry-next-starter/-/commits/master)
-- [Vercel Deploy](https://vercel.com/wener/yarn-berry-next-starter) - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
+- Vercel Deploy - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
+  - Stuck On [vercel/vercel#4436](https://github.com/vercel/vercel/issues/4436)
 
 ## Features
 

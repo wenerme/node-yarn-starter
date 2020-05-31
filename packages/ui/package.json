@@ -2,7 +2,7 @@
   "name": "@wener/yarn-berry-next-starter-ui",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch --listEmittedFiles"
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
