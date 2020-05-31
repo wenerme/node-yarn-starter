@@ -1,7 +1,11 @@
 image: wener/node:docker
 stages:
   - build
+  - test
   - deploy
+
+variables:
+  HEROKU_APP: "${CI_PROJECT_NAME}"
 
 Build Image:
   stage: build
@@ -20,6 +24,12 @@ Build Image:
     - echo Building image "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
     - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+
+Testing:
+  stage: test
+  script:
+    - yarn
+    - yarn test
 
 # Need HEROKU_API_KEY Env Var
 Heroku Deploy:
