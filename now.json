@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "rewrites": [{ "source": "/(.*)", "destination": "/packages/server/$1" }],
+  "builds": [
+    {
+      "src": "packages/server/next.config.js",
+      "use": "@now/next"
+    }
+  ]
+}

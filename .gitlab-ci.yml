@@ -1,6 +1,7 @@
 image: wener/node:docker
 stages:
   - build
+  - deploy
 
 Build Image:
   stage: build
@@ -19,6 +20,35 @@ Build Image:
     - echo Building image "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
     - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+
+# Need HEROKU_API_KEY Env Var
+Heroku Deploy:
+  stage: deploy
+  image: wener/heroku-cli:docker
+  services:
+    - name: docker:dind
+      entrypoint: ["env", "-u", "DOCKER_HOST"]
+      command: ["dockerd-entrypoint.sh"]
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    # See https://github.com/docker-library/docker/pull/166
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - heroku container:login
+  script:
+    - docker pull "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+    - docker tag "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" registry.heroku.com/$HEROKU_APP/web
+    - docker push registry.heroku.com/$HEROKU_APP/web
+    # release
+    - heroku container:release web
+  only:
+    - master
+  when: manual
+  environment:
+    name: heroku
+    url: https://$CI_PROJECT_NAME.herokuapp.com/
 
 cache:
   untracked: true
