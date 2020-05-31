@@ -1,9 +1,10 @@
-# yarn-berry-next-starter
+# Yarn2 NextJS Starter
 
 Yarn2 with NextJS and Gitlab CI
 
-- Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/yarn-berry-next-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/yarn-berry-next-starter/-/commits/master)
-- Zeit Deploy
+- Gitlab [wenerme/yarn-berry-next-starter](https://gitlab.com/wenerme/yarn-berry-next-starter) Mirrored from Github
+  - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/yarn-berry-next-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/yarn-berry-next-starter/-/commits/master)
+- [ ] Zeit Deploy
 
 ## Features
 
