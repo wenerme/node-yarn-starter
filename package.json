@@ -1,0 +1,35 @@
+{
+  "name": "@wener/yarn-berry-next-starter",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/wenerme/yarn-berry-next-starter",
+  "license": "MIT",
+  "author": "wener <wenermail@gmail.com>",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -pt run build",
+    "format": "yarn workspaces foreach run prettier --write src stories",
+    "sort": "yarn dlx sort-package-json package.json packages/*/package.json packages/*/tsconfig*.json && prettier --write package.json packages/*/package.json packages/*/tsconfig*.json",
+    "lint": "yarn workspaces foreach run eslint --fix --ext .ts,.tsx src",
+    "start": "yarn --cwd packages/server run start",
+    "typesync": "yarn workspaces foreach dlx typesync"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": "12"
+  }
+}

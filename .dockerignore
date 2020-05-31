@@ -1,0 +1,4 @@
+.next/
+!.next/cache/
+# include host build
+.yarn/unplugged
