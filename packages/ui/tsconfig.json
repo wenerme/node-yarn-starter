@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "jsx": "react",
     "outDir": "lib",
-    "baseUrl": "src"
+    "baseUrl": "."
   },
-  "include": ["src"]
+  "include": ["src", "stories", "__tests__"]
 }

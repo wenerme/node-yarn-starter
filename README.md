@@ -37,3 +37,45 @@ yarn start
 # Production Start
 docker run --rm -it -e PORT=3000 -p 3000:3000 registry.gitlab.com/wenerme/yarn-berry-next-starter:master
 ```
+
+# Dependencies
+
+## Root Dependencies
+
+```bash
+# Prettier
+yarn add -D prettier
+
+# lint-staged
+yarn add -D husky lint-staged
+
+# eslint
+yarn add -D eslint eslint-config-prettier eslint-plugin-jest eslint-plugin-react eslint-plugin-react-hooks
+# typescript-eslint
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+# lerna - Monorepo Publish
+yarn add -W -D lerna
+```
+
+## Package Dependencies
+
+```bash
+# NextJS
+yarn add next@latest react@latest react-dom@latest
+yarn add --dev typescript @types/react @types/node
+
+# NextJS Universal API Handling
+yarn add polka cors body-parser
+
+# Storybook
+yarn add --dev @storybook/{react,addons}
+yarn add --dev @storybook/addon-{actions,links,knob}
+# Storybook storysource
+yarn add --dev @storybook/source-loader @storybook/addon-storysource
+# Storybook Test
+yarn add --dev @storybook/addon-{storyshots}
+
+# Testing
+yarn add --dev jest ts-jest @types/jest
+```

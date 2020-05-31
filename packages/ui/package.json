@@ -1,12 +1,28 @@
 {
   "name": "@wener/yarn-berry-next-starter-ui",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch --listEmittedFiles"
+    "test": "jest",
+    "build": "tsc --project tsconfig.build.json",
+    "dev": "tsc --watch --listEmittedFiles --project tsconfig.build.json",
+    "storybook:dev": "start-storybook -p ${PORT:-6006}",
+    "storybook:build": "build-storybook -c .storybook -o storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storyshots": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@storybook/source-loader": "^5.3.19",
+    "@types/jest": "^25.2.3",
     "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "jest": "^26",
     "react": "^16.13",
+    "react-dom": "^16.13.1",
+    "ts-jest": "^26.1.0",
     "typescript": "^3.9"
   },
   "peerDependencies": {
