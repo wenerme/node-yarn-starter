@@ -1,12 +1,14 @@
-import React from 'react'
-import {NextPage} from 'next'
-import {MyButton} from '@wener/yarn-berry-next-starter-ui'
-const Page:NextPage = ()=>{
-  return <div>
+import React from 'react';
+import { NextPage } from 'next';
+import { MyButton } from '@wener/yarn-berry-next-starter-ui';
+const Page: NextPage = () => {
+  return (
+    <div>
       <h2>NextJS Working!</h2>
       <div>
-          <MyButton/>
+        <MyButton />
       </div>
-  </div>
-}
-export default Page
+    </div>
+  );
+};
+export default Page;

@@ -4,7 +4,7 @@ Yarn2 with NextJS and Gitlab CI
 
 - Gitlab [wenerme/yarn-berry-next-starter](https://gitlab.com/wenerme/yarn-berry-next-starter) Mirrored from Github
   - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/yarn-berry-next-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/yarn-berry-next-starter/-/commits/master)
-- [ ] Zeit Deploy
+- [Vercel Deploy](https://vercel.com/wener/yarn-berry-next-starter) - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
 
 ## Features
 
@@ -12,7 +12,9 @@ Yarn2 with NextJS and Gitlab CI
 - monorepo
   - server
     - NextJS
-      - [ ] Universal API Handler
+      - Universal API Handler
+        - Workaround Vercel 12 Lambada Limit
+        - Easier to control apis
     - [ ] Jest
   - ui
     - [ ] Storybook

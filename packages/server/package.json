@@ -8,11 +8,16 @@
   },
   "dependencies": {
     "@wener/yarn-berry-next-starter-ui": "workspace:packages/ui",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "next": "latest",
+    "polka": "^0.5.2",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
     "@types/node": "^14.0.6",
     "@types/react": "^16.9.35",
     "@types/react-dom": "16.9.8",
