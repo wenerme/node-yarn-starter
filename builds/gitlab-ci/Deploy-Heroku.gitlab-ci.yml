@@ -33,5 +33,5 @@ Heroku Deploy:
   when: manual
   environment:
     name: heroku
-    url: https://$CI_PROJECT_NAME.herokuapp.com/
+    url: https://$HEROKU_APP.herokuapp.com/
 

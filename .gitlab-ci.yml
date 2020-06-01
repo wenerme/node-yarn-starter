@@ -1,4 +1,13 @@
-image: wener/node:docker
+default:
+  image: wener/node:docker
+  cache:
+    untracked: true
+    key: "$CI_COMMIT_REF_NAME"
+    paths:
+      - node_modules/
+      - .yarn/
+      - packages/server/.next/cache/
+
 stages:
   - build
   - test
@@ -30,11 +39,3 @@ Testing:
   script:
     - yarn
     - yarn test
-
-cache:
-  untracked: true
-  key: "$CI_COMMIT_REF_NAME"
-  paths:
-    - node_modules/
-    - .yarn/
-    - packages/server/.next/cache/

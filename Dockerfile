@@ -4,8 +4,13 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY .yarn/cache /app/.yarn/cache
-COPY packages/server/.next/cache /app/packages/server/.next/cache
-COPY . /app
+COPY .yarn/plugins /app/.yarn/plugins
+COPY .yarn/releases /app/.yarn/releases
+
+COPY .yarnrc.yml /app
+COPY yarn.lock /app
+COPY package.json /app
+COPY packages /app
 RUN yarn && yarn build
 
 CMD [ "yarn", "start"]
