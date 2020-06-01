@@ -11,7 +11,7 @@ COPY .yarnrc.yml /app
 COPY yarn.lock /app
 COPY package.json /app
 COPY packages /app/packages
-RUN yarn install yarn install --immutable --immutable-cache && yarn build
+RUN yarn install --immutable --immutable-cache && yarn build
 
 CMD [ "yarn", "start"]
 
