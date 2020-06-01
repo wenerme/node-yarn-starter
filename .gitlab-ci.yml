@@ -5,7 +5,7 @@ stages:
   - deploy
 
 include:
-  - template: build/ci/Deploy-Heroku.gitlab-ci.yml
+  - template: /build/ci/Deploy-Heroku.gitlab-ci.yml
 
 Build Image:
   stage: build
