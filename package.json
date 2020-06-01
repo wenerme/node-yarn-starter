@@ -16,7 +16,7 @@
     "format": "yarn workspaces foreach run prettier --write src stories",
     "sort": "yarn dlx sort-package-json package.json packages/*/package.json packages/*/tsconfig*.json && prettier --write package.json packages/*/package.json packages/*/tsconfig*.json",
     "lint": "yarn workspaces foreach run eslint --fix --ext .ts,.tsx src",
-    "start": "yarn --cwd packages/server run start",
+    "start": "yarn workspace @wener/yarn-berry-next-starter-server run start",
     "typesync": "yarn workspaces foreach dlx typesync"
   },
   "devDependencies": {

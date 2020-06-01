@@ -8,6 +8,23 @@ Yarn2 with NextJS and Gitlab CI
   - Stuck On [vercel/vercel#4436](https://github.com/vercel/vercel/issues/4436)
 - Heroku Deploy - [yarn-berry-next-starter.herokuapp.com](https://yarn-berry-next-starter.herokuapp.com)
 
+## How to use
+
+```bash
+git clone --depth=1 https://github.com/wenerme/yarn-berry-next-starter my-app
+
+# fresh repo
+cd my-app && rm -rf .git && git init
+
+# rename package
+# maybe you should also manully change the license, repository, author etc.
+sed -i 's#@wener/yarn-berry-next-starter#@wener/my-app#g' package.json packages/*/package.json packages/**/*.{tsx,ts}
+yarn
+
+# done
+# you can remove the subpackages you don't need
+```
+
 ## Features
 
 - Yarn 2
