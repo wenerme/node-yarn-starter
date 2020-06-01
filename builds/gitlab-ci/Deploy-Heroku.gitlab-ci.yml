@@ -2,7 +2,10 @@
 # Need HEROKU_API_KEY HEROKU_APP Env Var
 
 variables:
-  HEROKU_APP: "${HEROKU_APP:-CI_PROJECT_NAME}"
+  # Do not support default variables
+  # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/1867:
+  # HEROKU_APP: "${HEROKU_APP:-$CI_PROJECT_NAME}"
+  HEROKU_APP: "$CI_PROJECT_NAME"
 
 Heroku Deploy:
   stage: deploy
