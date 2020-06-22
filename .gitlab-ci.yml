@@ -34,8 +34,9 @@ Build Image:
     - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
     # tagged as v20200601121212
-    - docker tag "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" "$CI_REGISTRY_IMAGE:v`date +"%Y%m%d%H%M%S"`"
-    - docker push "$CI_REGISTRY_IMAGE:v`date +"%Y%m%d%H%M%S"`"
+    - CI_REGISTRY_IMAGE_DATA_VER="$CI_REGISTRY_IMAGE:v`date +"%Y%m%d%H%M%S"`"
+    - docker tag "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" "$CI_REGISTRY_IMAGE_DATA_VER"
+    - docker push "$CI_REGISTRY_IMAGE_DATA_VER"
 
 Testing:
   stage: test

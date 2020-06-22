@@ -114,3 +114,21 @@ yarn add --dev @storybook/addon-{storyshots}
 # Testing
 yarn add --dev jest ts-jest @types/jest
 ```
+
+## Optional Database Dependencies
+
+```bash
+# database driver
+yarn add pg
+yarn add sqlite3
+yarn add mysql
+yarn add mysql2
+
+# objection - model based dao access
+yarn add objection knex
+
+# typeorm - ORM based
+yarn add typeorm
+# required for decorate
+yarn add reflect-metadata
+```
