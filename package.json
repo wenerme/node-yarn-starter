@@ -10,28 +10,28 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "yarn workspaces foreach -pi run dev",
     "build": "yarn workspaces foreach -pt run build",
-    "test": "yarn workspaces foreach -i run test",
-    "format": "yarn workspaces foreach run prettier --write src stories",
+    "dev": "yarn workspaces foreach -pi run dev",
+    "format": "yarn prettier --write packages/*/src packages/*/stories",
+    "lint": "yarn eslint --fix --ext .ts,.tsx packages/*/src",
     "sort": "yarn dlx sort-package-json package.json packages/*/package.json packages/*/tsconfig*.json && prettier --write package.json packages/*/package.json packages/*/tsconfig*.json",
-    "lint": "yarn workspaces foreach run eslint --fix --ext .ts,.tsx src",
-    "start": "yarn workspace @wener/yarn-berry-next-starter-server run start",
+    "start": "yarn workspace @incos/inckeeper-server run start",
+    "test": "yarn workspaces foreach -i run test",
     "typesync": "yarn workspaces foreach dlx typesync"
   },
   "devDependencies": {
-    "@types/eslint": "^6.8.1",
-    "@types/prettier": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
-    "eslint": "^7.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-jest": "^23.13.2",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.7",
-    "prettier": "^2.0.5"
+    "@types/eslint": "^7",
+    "@types/prettier": "^2",
+    "@typescript-eslint/eslint-plugin": "^3",
+    "@typescript-eslint/parser": "^3",
+    "eslint": "^7",
+    "eslint-config-prettier": "^6",
+    "eslint-plugin-jest": "^23",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^4",
+    "husky": "^4",
+    "lint-staged": "^10",
+    "prettier": "^2"
   },
   "engines": {
     "node": "12"

@@ -1,5 +1,5 @@
 function normalizeError(e) {
-  return {status: e.status || 500, message: e.message || Object.prototype.toString.call(e)};
+  return { status: e.status || 500, message: e.message || Object.prototype.toString.call(e) };
 }
 
 export async function errorInterceptorMiddleware(req, res, next) {

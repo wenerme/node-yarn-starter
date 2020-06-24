@@ -9,24 +9,24 @@
   },
   "dependencies": {
     "@wener/yarn-berry-next-starter-ui": "workspace:packages/ui",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
+    "body-parser": "^1",
+    "cors": "^2",
     "next": "latest",
-    "polka": "^0.5.2",
+    "polka": "^0",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/body-parser": "^1.19.0",
-    "@types/cors": "^2.8.6",
-    "@types/jest": "^25.2.3",
-    "@types/node": "^14.0.6",
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "16.9.8",
-    "dotenv": "^8.2.0",
-    "jest": "^26.0.1",
-    "ts-jest": "^26.1.0",
-    "typescript": "^3.9.3"
+    "@types/body-parser": "^1",
+    "@types/cors": "^2",
+    "@types/jest": "^25",
+    "@types/node": "^14",
+    "@types/react": "^16",
+    "@types/react-dom": "16",
+    "dotenv": "^8",
+    "jest": "^26",
+    "ts-jest": "^26",
+    "typescript": "^3"
   },
   "engines": {
     "node": "12"
