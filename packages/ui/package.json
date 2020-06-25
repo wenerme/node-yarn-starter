@@ -5,7 +5,7 @@
     "build": "tsc --project tsconfig.build.json",
     "dev": "tsc --watch --listEmittedFiles --project tsconfig.build.json",
     "storybook:dev": "start-storybook -p ${PORT:-6006} --ci",
-    "storybook:build": "build-storybook -c .storybook -o storybook"
+    "build:storybook": "build-storybook -c .storybook -o storybook"
   },
   "devDependencies": {
     "@storybook/addon-actions": "next",
