@@ -43,3 +43,13 @@ Testing:
   script:
     - yarn
     - yarn test
+
+pages:
+  script:
+    - yarn
+    - yarn workspace @wener/node-yarn-starter-ui run build:storybook
+  artifacts:
+    paths:
+      - packages/ui/storybook
+  only:
+    - master
