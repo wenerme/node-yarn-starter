@@ -1,24 +1,24 @@
-# Yarn2 NextJS Starter
+# Node Yarn2 Starter
 
 Yarn2 with NextJS and Gitlab CI
 
-- Gitlab [wenerme/yarn-berry-next-starter](https://gitlab.com/wenerme/yarn-berry-next-starter) Mirrored from Github
-  - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/yarn-berry-next-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/yarn-berry-next-starter/-/commits/master)
+- Gitlab [wenerme/node-yarn-starter](https://gitlab.com/wenerme/node-yarn-starter) Mirrored from Github
+  - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/node-yarn-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/node-yarn-starter/-/commits/master)
 - Vercel Deploy - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
   - Stuck On [vercel/vercel#4436](https://github.com/vercel/vercel/issues/4436)
-- Heroku Deploy - [yarn-berry-next-starter.herokuapp.com](https://yarn-berry-next-starter.herokuapp.com)
+- Heroku Deploy - [node-yarn-starter.herokuapp.com](https://node-yarn-starter.herokuapp.com)
 
 ## How to use
 
 ```bash
-git clone --depth=1 https://github.com/wenerme/yarn-berry-next-starter my-app
+git clone --depth=1 https://github.com/wenerme/node-yarn-starter my-app
 
 # fresh repo
 cd my-app && rm -rf .git && git init
 
 # rename package
 # maybe you should also manully change the license, repository, author etc.
-sed -i 's#@wener/yarn-berry-next-starter#@wener/my-app#g' package.json packages/*/package.json packages/**/*.{tsx,ts}
+sed -i 's#@wener/node-yarn-starter#@wener/my-app#g' package.json packages/*/package.json packages/**/*.{tsx,ts}
 yarn
 
 # done
@@ -43,9 +43,10 @@ yarn
 - eslint
 - prettier
 - Gitlab CI
-  - Build Docker Image `registry.gitlab.com/wenerme/yarn-berry-next-starter:master`
+  - Build Docker Image `registry.gitlab.com/wenerme/node-yarn-starter:master`
   - Heroku Deploy
     - Need `HEROKU_API_KEY` Env Var
+- Github CI
 
 ## Start
 
@@ -59,14 +60,14 @@ yarn dev
 yarn storybook:dev
 
 # Production Start
-docker run --rm -it -e PORT=3000 -p 3000:3000 registry.gitlab.com/wenerme/yarn-berry-next-starter:master
+docker run --rm -it -e PORT=3000 -p 3000:3000 registry.gitlab.com/wenerme/node-yarn-starter:master
 ```
 
 ## Heroku Deploy
 
 ```bash
 # create you app
-heroku apps:create yarn-berry-next-starter
+heroku apps:create node-yarn-starter
 # create auth token
 heroku authorizations:create -d 'Gitlab CI'
 # Copy Token to Gitlab config as HEROKU_API_KEY

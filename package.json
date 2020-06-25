@@ -1,8 +1,8 @@
 {
-  "name": "@wener/yarn-berry-next-starter",
+  "name": "@wener/node-yarn-starter",
   "version": "1.0.0",
   "private": true,
-  "repository": "https://github.com/wenerme/yarn-berry-next-starter",
+  "repository": "https://github.com/wenerme/node-yarn-starter",
   "license": "MIT",
   "author": "wener <wenermail@gmail.com>",
   "workspaces": [
