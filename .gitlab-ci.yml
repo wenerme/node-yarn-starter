@@ -48,8 +48,9 @@ pages:
   script:
     - yarn
     - yarn workspace @wener/node-yarn-starter-ui run build:storybook
+    - mv packages/ui/storybook public
   artifacts:
     paths:
-      - packages/ui/storybook
+      - public
   only:
     - master
