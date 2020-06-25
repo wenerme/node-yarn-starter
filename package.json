@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
+    "build:public": "yarn workspace @wener/node-yarn-starter-ui run build:storybook && cp -r packages/ui/storybook public",
     "dev": "yarn workspaces foreach -pi run dev",
     "format": "yarn prettier --write packages/*/src packages/*/stories",
     "lint": "yarn eslint --fix --ext .ts,.tsx packages/*/src",

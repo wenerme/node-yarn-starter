@@ -47,8 +47,7 @@ Testing:
 pages:
   script:
     - yarn
-    - yarn workspace @wener/node-yarn-starter-ui run build:storybook
-    - mv packages/ui/storybook public
+    - yarn build:public
   artifacts:
     paths:
       - public
