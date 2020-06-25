@@ -5,7 +5,6 @@
   "repository": "https://github.com/wenerme/yarn-berry-next-starter",
   "license": "MIT",
   "author": "wener <wenermail@gmail.com>",
-  "main": "index.js",
   "workspaces": [
     "packages/*"
   ],

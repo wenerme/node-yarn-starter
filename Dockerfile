@@ -3,9 +3,9 @@ FROM node:12-alpine
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY .yarn/cache /app/.yarn/cache
 COPY .yarn/plugins /app/.yarn/plugins
 COPY .yarn/releases /app/.yarn/releases
+COPY .yarn/cache /app/.yarn/cache
 
 COPY .yarnrc.yml /app
 COPY yarn.lock /app

@@ -2897,7 +2897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^25, @types/jest@npm:^25.1.1, @types/jest@npm:^25.2.3":
+"@types/jest@npm:*, @types/jest@npm:^25, @types/jest@npm:^25.1.1":
   version: 25.2.3
   resolution: "@types/jest@npm:25.2.3::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-25.2.3.tgz"
   dependencies:
@@ -3059,7 +3059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:16, @types/react-dom@npm:^16.9.8":
+"@types/react-dom@npm:16, @types/react-dom@npm:^16":
   version: 16.9.8
   resolution: "@types/react-dom@npm:16.9.8::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-dom%2Fdownload%2F%40types%2Freact-dom-16.9.8.tgz"
   dependencies:
@@ -3086,7 +3086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^16.9.35":
+"@types/react@npm:*":
   version: 16.9.35
   resolution: "@types/react@npm:16.9.35::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact%2Fdownload%2F%40types%2Freact-16.9.35.tgz"
   dependencies:
@@ -3541,18 +3541,19 @@ __metadata:
     "@storybook/addons": next
     "@storybook/react": next
     "@storybook/source-loader": next
-    "@types/jest": ^25.2.3
-    "@types/react": ^16.9.35
-    "@types/react-dom": ^16.9.8
-    core-js: ^3.6.5
+    "@types/jest": ^25
+    "@types/react": ^16
+    "@types/react-dom": ^16
+    core-js: ^3
     jest: ^26
-    react: ^16.13
-    react-dom: ^16.13.1
-    react-test-renderer: ^16.13.1
-    ts-jest: ^26.1.0
-    typescript: ^3.9
+    react: ^16
+    react-dom: ^16
+    react-test-renderer: ^16
+    ts-jest: ^26
+    typescript: ^3
   peerDependencies:
     react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -5798,7 +5799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.1, core-js@npm:^3.0.4, core-js@npm:^3.6.5":
+"core-js@npm:^3, core-js@npm:^3.0.1, core-js@npm:^3.0.4":
   version: 3.6.5
   resolution: "core-js@npm:3.6.5::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.6.5.tgz"
   checksum: 9283348dd5be2f1d07feaf90e2336b3f00a2316e3d3c6d4f789c9a67bdd4d7b08ce1c88dca4e591340130056c6b412b0b74fae039f8e259206f1073f542e4e85
@@ -13101,7 +13102,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^16.13.1, react-dom@npm:^16.8.3, react-dom@npm:latest":
+"react-dom@npm:^16, react-dom@npm:^16.8.3, react-dom@npm:latest":
   version: 16.13.1
   resolution: "react-dom@npm:16.13.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-dom%2Fdownload%2Freact-dom-16.13.1.tgz"
   dependencies:
@@ -13290,7 +13291,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:^16.13.1":
+"react-test-renderer@npm:^16":
   version: 16.13.1
   resolution: "react-test-renderer@npm:16.13.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-test-renderer%2Fdownload%2Freact-test-renderer-16.13.1.tgz"
   dependencies:
@@ -13331,7 +13332,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:^16.13, react@npm:^16.8.3, react@npm:^16.9.17, react@npm:latest":
+"react@npm:^16, react@npm:^16.8.3, react@npm:^16.9.17, react@npm:latest":
   version: 16.13.1
   resolution: "react@npm:16.13.1::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Freact%2Fdownload%2Freact-16.13.1.tgz"
   dependencies:
@@ -15448,29 +15449,6 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^26.1.0":
-  version: 26.1.0
-  resolution: "ts-jest@npm:26.1.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-jest%2Fdownload%2Fts-jest-26.1.0.tgz"
-  dependencies:
-    bs-logger: 0.x
-    buffer-from: 1.x
-    fast-json-stable-stringify: 2.x
-    json5: 2.x
-    lodash.memoize: 4.x
-    make-error: 1.x
-    micromatch: 4.x
-    mkdirp: 1.x
-    semver: 7.x
-    yargs-parser: 18.x
-  peerDependencies:
-    jest: ">=26 <27"
-    typescript: ">=3.8 <4.0"
-  bin:
-    ts-jest: cli.js
-  checksum: 4289da86b257a0cd1afcc6412e6f6d6e25388cb620c5f56cf0deb909dacb3c7f598ca07c4dbd52cccb2d94408419a732b50ceffcb46d041b311b8d5d41668f24
-  languageName: node
-  linkType: hard
-
 "ts-pnp@npm:^1.1.6":
   version: 1.2.0
   resolution: "ts-pnp@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Fts-pnp%2Fdownload%2Fts-pnp-1.2.0.tgz"
@@ -15634,16 +15612,6 @@ typescript@^3:
   languageName: node
   linkType: hard
 
-typescript@^3.9:
-  version: 3.9.4
-  resolution: "typescript@npm:3.9.4::__archiveUrl=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.4.tgz"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: f364e86609679566abda039acf35030b78d738c456dae201bad71722b47aa753ea42f3076a2767b72b63a1b8641f1ffb3984dcbdf088bd401b4e7118e3601893
-  languageName: node
-  linkType: hard
-
 "typescript@patch:typescript@^3#builtin<compat/typescript>":
   version: 3.9.5
   resolution: "typescript@patch:typescript@npm%3A3.9.5%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npm.taobao.org%252Ftypescript%252Fdownload%252Ftypescript-3.9.5.tgz#builtin<compat/typescript>::version=3.9.5&hash=64df9d"
@@ -15651,16 +15619,6 @@ typescript@^3.9:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 5849aa7c2d887b4d0b289530b45690fc26e606ea3719cf958dbb7f531ca1b968895bbef89b21ecb3903d5039fb047ebf6a0047ba147123060cbe1940ce5c91be
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^3.9#builtin<compat/typescript>":
-  version: 3.9.4
-  resolution: "typescript@patch:typescript@npm%3A3.9.4%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npm.taobao.org%252Ftypescript%252Fdownload%252Ftypescript-3.9.4.tgz#builtin<compat/typescript>::version=3.9.4&hash=64df9d"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: ca1ca625d462f3b032bd1ee90e376b90d8b2faca5582fb8ca3b50f03a43db2996e22c4c86e559c803847b9b1bbe59f8da5da6540bd9947d4079a3d08a4b2ed25
   languageName: node
   linkType: hard
 
