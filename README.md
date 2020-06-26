@@ -4,6 +4,10 @@ Yarn2 with NextJS and Gitlab CI
 
 - Gitlab [wenerme/node-yarn-starter](https://gitlab.com/wenerme/node-yarn-starter) Mirrored from Github
   - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/node-yarn-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/node-yarn-starter/-/commits/master)
+  - Deployed Page [wenerme.gitlab.io/node-yarn-starter](https://wenerme.github.io/node-yarn-starter)
+- Github [wenerme/node-yarn-starter](https://github.com/wenerme/node-yarn-starter)
+  - Github Action ![Build](https://github.com/wenerme/node-yarn-starter/workflows/Build/badge.svg)
+  - Deployed Page [wenerme.github.io/node-yarn-starter](https://wenerme.github.io/node-yarn-starter)
 - Vercel Deploy - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
   - Stuck On [vercel/vercel#4436](https://github.com/vercel/vercel/issues/4436)
 - Heroku Deploy - [node-yarn-starter.herokuapp.com](https://node-yarn-starter.herokuapp.com)
