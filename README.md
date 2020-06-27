@@ -1,16 +1,35 @@
 # Node Yarn2 Starter
 
-Yarn2 with NextJS and Gitlab CI
+Yarn2 Starter Template Project with a lot of features.
 
 - Gitlab [wenerme/node-yarn-starter](https://gitlab.com/wenerme/node-yarn-starter) Mirrored from Github
-  - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/node-yarn-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/node-yarn-starter/-/commits/master)
+  - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/node-yarn-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/node-yarn-starter/-/pipelines)
   - Deployed Page [wenerme.gitlab.io/node-yarn-starter](https://wenerme.github.io/node-yarn-starter)
+  - Build Docker Image `registry.gitlab.com/wenerme/node-yarn-starter:master`
+  - Deploy Heroku - Need `HEROKU_API_KEY` Env Var
 - Github [wenerme/node-yarn-starter](https://github.com/wenerme/node-yarn-starter)
-  - Github Action ![Build](https://github.com/wenerme/node-yarn-starter/workflows/Build/badge.svg)
+  - Github Action [![Build](https://github.com/wenerme/node-yarn-starter/workflows/Build/badge.svg)](https://github.com/wenerme/node-yarn-starter/actions)
   - Deployed Page [wenerme.github.io/node-yarn-starter](https://wenerme.github.io/node-yarn-starter)
 - Vercel Deploy - [yarn-berry-next-starter.now.sh](https://yarn-berry-next-starter.now.sh)
   - Stuck On [vercel/vercel#4436](https://github.com/vercel/vercel/issues/4436)
 - Heroku Deploy - [node-yarn-starter.herokuapp.com](https://node-yarn-starter.herokuapp.com)
+- Yarn 2
+  - Loose PnP Mode - early stage of yarn berry
+- monorepo
+  - server
+    - NextJS
+      - Universal API Handler
+        - Workaround Vercel 12 Lambada Limit
+        - Easier to control apis
+    - Jest
+  - ui
+    - Jest
+    - Storybook 6
+- typescript
+- eslint
+    - `yarn lint`
+- prettier
+    - `yarn format`
 
 ## How to use
 
@@ -28,29 +47,6 @@ yarn
 # done
 # you can remove the subpackages you don't need
 ```
-
-## Features
-
-- Yarn 2
-  - Loose Pnp Mode - early stage of yarn berry
-- monorepo
-  - server
-    - NextJS
-      - Universal API Handler
-        - Workaround Vercel 12 Lambada Limit
-        - Easier to control apis
-    - Jest
-  - ui
-    - Jest
-    - Storybook 6
-- typescript
-- eslint
-- prettier
-- Gitlab CI
-  - Build Docker Image `registry.gitlab.com/wenerme/node-yarn-starter:master`
-  - Heroku Deploy
-    - Need `HEROKU_API_KEY` Env Var
-- Github CI
 
 ## Start
 
