@@ -1,10 +1,9 @@
-name: Build
+name: NPM Publish
 
 on:
   push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+    tags:
+      - '*'
 
 jobs:
   build:
@@ -30,16 +29,6 @@ jobs:
 
       - run: yarn
       - run: yarn build
-      - run: yarn test
-
-      - run: yarn build:public
-      - name: Deploy Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: public
-
       - name: Publish NPM
         run: |
           echo '//npm.pkg.github.com:_authToken=${GITHUB_TOKEN}'>.npmrc
