@@ -1,7 +1,7 @@
 {
   "name": "@wenerme/node-yarn-starter-server",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha.0",
   "private": true,
   "scripts": {
     "test": "jest",
@@ -10,7 +10,7 @@
     "start": "next start -p ${PORT:-3000}"
   },
   "dependencies": {
-    "@wenerme/node-yarn-starter-ui": "1.0.0",
+    "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.0",
     "body-parser": "^1",
     "cors": "^2",
     "next": "latest",
