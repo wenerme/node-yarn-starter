@@ -6,7 +6,15 @@
   "command": {
     "publish": {
       "npmClient": "npm",
-      "ignoreChanges": ["*.md", "tests/*", "__tests__/*"]
+      "ignoreChanges": [
+        "**/__fixtures__/**",
+        "**/__tests__/**",
+        "**/stories/**",
+        "**/*.md",
+        "**/*.stories.tsx",
+        "**/*.test.ts",
+        "**/*.test.tsx"
+      ]
     }
   }
 }
