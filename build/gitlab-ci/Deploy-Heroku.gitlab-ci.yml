@@ -28,8 +28,6 @@ Heroku Deploy:
     - docker push registry.heroku.com/$HEROKU_APP/web
     # release
     - heroku container:release web
-  only:
-    - master
   environment:
     name: heroku
     url: https://$HEROKU_APP.herokuapp.com/
