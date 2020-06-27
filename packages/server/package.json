@@ -1,13 +1,13 @@
 {
   "name": "@wenerme/node-yarn-starter-server",
-  "license": "MIT",
   "version": "1.0.1-alpha.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
-    "test": "jest",
     "build": "next build",
     "dev": "next dev -p ${PORT:-3000}",
-    "start": "next start -p ${PORT:-3000}"
+    "start": "next start -p ${PORT:-3000}",
+    "test": "jest"
   },
   "dependencies": {
     "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.0",

@@ -1,12 +1,40 @@
 {
   "name": "@wenerme/node-yarn-starter-ui",
   "version": "1.0.1-alpha.0",
+  "description": "Yarn2 node starter template project - ui module",
+  "keywords": [
+    "starter",
+    "template"
+  ],
+  "homepage": "https://github.com/wenerme/node-yarn-starter#readme",
+  "bugs": {
+    "url": "https://github.com/wenerme/node-yarn-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenerme/node-yarn-starter.git",
+    "directory": "packages/ui"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "wener",
+    "email": "wenermail@gmail.com",
+    "url": "https://wener.me"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.*",
+    "tsconfig.json",
+    "lib",
+    "src",
+    "dist"
+  ],
   "scripts": {
-    "test": "jest",
     "build": "tsc --project tsconfig.build.json",
+    "build:storybook": "build-storybook -c .storybook -o storybook",
     "dev": "tsc --watch --listEmittedFiles --project tsconfig.build.json",
     "storybook:dev": "start-storybook -p ${PORT:-6006} --ci",
-    "build:storybook": "build-storybook -c .storybook -o storybook"
+    "test": "jest"
   },
   "devDependencies": {
     "@storybook/addon-actions": "next",
