@@ -1,6 +1,6 @@
 {
   "name": "@wenerme/node-yarn-starter-server",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1-alpha.1",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.0",
+    "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.1",
     "body-parser": "^1",
     "cors": "^2",
     "next": "latest",
