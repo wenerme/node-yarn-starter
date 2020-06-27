@@ -30,8 +30,11 @@ Heroku Deploy:
     - heroku container:release web
   only:
     - master
-  when: manual
   environment:
     name: heroku
     url: https://$HEROKU_APP.herokuapp.com/
-
+  # auto deploy when env var meet
+  rules:
+    - if: $HEROKU_API_KEY != ""
+      when: on_success
+    - when: manual
