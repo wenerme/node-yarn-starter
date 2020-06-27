@@ -39,3 +39,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: public
+
+      - name: Publish NPM
+        run: |
+          echo '//npm.pkg.github.com:_authToken=${GITHUB_TOKEN}'>.npmrc
+          yarn lerna publish from-git --yes --registry "https://npm.pkg.github.com/wenerme"
+        with:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
