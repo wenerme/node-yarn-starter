@@ -53,3 +53,11 @@ pages:
       - public
   only:
     - master
+
+Publish NPM:
+  stage: deploy
+  script:
+    - echo '//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}'>.npmrc
+    - yarn lerna publish from-git --yes --registry "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
+  only:
+    - tags

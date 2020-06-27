@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { MyButton } from '@wener/node-yarn-starter-ui';
+import { MyButton } from '@wenerme/node-yarn-starter-ui';
 const Page: NextPage = () => {
   return (
     <div>
