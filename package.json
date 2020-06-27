@@ -1,5 +1,5 @@
 {
-  "name": "@wener/node-yarn-starter",
+  "name": "@wenerme/node-yarn-starter",
   "version": "1.0.0",
   "private": true,
   "repository": "https://github.com/wenerme/node-yarn-starter",
@@ -10,12 +10,12 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
-    "build:public": "yarn workspace @wener/node-yarn-starter-ui run build:storybook && cp -r packages/ui/storybook public",
+    "build:public": "yarn workspace @wenerme/node-yarn-starter-ui run build:storybook && cp -r packages/ui/storybook public",
     "dev": "yarn workspaces foreach -pi run dev",
     "format": "yarn prettier --write packages/*/src packages/*/stories",
     "lint": "yarn eslint --fix --ext .ts,.tsx packages/*/src",
     "sort": "yarn dlx sort-package-json package.json packages/*/package.json packages/*/tsconfig*.json && prettier --write package.json packages/*/package.json packages/*/tsconfig*.json",
-    "start": "yarn workspace @wener/node-yarn-starter-server run start",
+    "start": "yarn workspace @wenerme/node-yarn-starter-server run start",
     "test": "yarn workspaces foreach -i run test",
     "typesync": "yarn workspaces foreach dlx typesync"
   },

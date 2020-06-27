@@ -3505,9 +3505,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wener/node-yarn-starter-server@workspace:packages/server":
+"@wenerme/node-yarn-starter-server@workspace:packages/server":
   version: 0.0.0-use.local
-  resolution: "@wener/node-yarn-starter-server@workspace:packages/server"
+  resolution: "@wenerme/node-yarn-starter-server@workspace:packages/server"
   dependencies:
     "@types/body-parser": ^1
     "@types/cors": ^2
@@ -3515,7 +3515,7 @@ __metadata:
     "@types/node": ^14
     "@types/react": ^16
     "@types/react-dom": 16
-    "@wener/node-yarn-starter-ui": "workspace:packages/ui"
+    "@wenerme/node-yarn-starter-ui": "workspace:packages/ui"
     body-parser: ^1
     cors: ^2
     dotenv: ^8
@@ -3529,9 +3529,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@wener/node-yarn-starter-ui@workspace:packages/ui":
+"@wenerme/node-yarn-starter-ui@workspace:packages/ui":
   version: 0.0.0-use.local
-  resolution: "@wener/node-yarn-starter-ui@workspace:packages/ui"
+  resolution: "@wenerme/node-yarn-starter-ui@workspace:packages/ui"
   dependencies:
     "@storybook/addon-actions": next
     "@storybook/addon-knobs": next
@@ -3557,9 +3557,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@wener/node-yarn-starter@workspace:.":
+"@wenerme/node-yarn-starter@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@wener/node-yarn-starter@workspace:."
+  resolution: "@wenerme/node-yarn-starter@workspace:."
   dependencies:
     "@types/eslint": ^7
     "@types/prettier": ^2

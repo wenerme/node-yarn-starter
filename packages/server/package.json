@@ -1,5 +1,5 @@
 {
-  "name": "@wener/node-yarn-starter-server",
+  "name": "@wenerme/node-yarn-starter-server",
   "license": "MIT",
   "scripts": {
     "test": "jest",
@@ -8,7 +8,7 @@
     "start": "next start -p ${PORT:-3000}"
   },
   "dependencies": {
-    "@wener/node-yarn-starter-ui": "workspace:packages/ui",
+    "@wenerme/node-yarn-starter-ui": "workspace:packages/ui",
     "body-parser": "^1",
     "cors": "^2",
     "next": "latest",

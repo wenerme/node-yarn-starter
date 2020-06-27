@@ -1,5 +1,5 @@
 {
-  "name": "@wener/node-yarn-starter-ui",
+  "name": "@wenerme/node-yarn-starter-ui",
   "scripts": {
     "test": "jest",
     "build": "tsc --project tsconfig.build.json",
