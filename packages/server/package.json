@@ -13,10 +13,10 @@
     "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.1",
     "body-parser": "^1",
     "cors": "^2",
-    "next": "latest",
+    "next": "^9.5",
     "polka": "^0",
-    "react": "latest",
-    "react-dom": "latest"
+    "react": "^16",
+    "react-dom": "^16"
   },
   "devDependencies": {
     "@types/body-parser": "^1",

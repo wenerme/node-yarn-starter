@@ -1,5 +1,9 @@
 {
   "version": 2,
+  "public": true,
+  "github": {
+    "enabled": false
+  },
   "rewrites": [{ "source": "/(.*)", "destination": "/packages/server/$1" }],
   "builds": [
     {

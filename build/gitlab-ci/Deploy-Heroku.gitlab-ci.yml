@@ -35,4 +35,5 @@ Heroku Deploy:
   rules:
     - if: $HEROKU_API_KEY != ""
       when: on_success
+    # Alloed manual deploy
     - when: manual
