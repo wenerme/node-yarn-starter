@@ -111,7 +111,7 @@ dist
 
 # yarn v2
 
-.yarn
+.yarn/*
 !.yarn/releases
 !.yarn/plugins
 .pnp.*

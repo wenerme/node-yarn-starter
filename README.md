@@ -4,7 +4,7 @@ Yarn2 Starter Template Project with a lot of features.
 
 - Gitlab [wenerme/node-yarn-starter](https://gitlab.com/wenerme/node-yarn-starter) Mirrored from Github
   - Gitlab Pipeline [![pipeline status](https://gitlab.com/wenerme/node-yarn-starter/badges/master/pipeline.svg)](https://gitlab.com/wenerme/node-yarn-starter/-/pipelines)
-  - Deployed Page [wenerme.gitlab.io/node-yarn-starter](https://wenerme.github.io/node-yarn-starter)
+  - Deployed Page [wenerme.gitlab.io/node-yarn-starter](https://wenerme.gitlab.io/node-yarn-starter)
   - Deploy Heroku - Need `HEROKU_API_KEY` Env Var
   - Publish tagged to [Gitlab NPM Registry](https://gitlab.com/wenerme/node-yarn-starter/-/packages)
   - Publish Docker Image to [Gitlab Container Registry](https://gitlab.com/wenerme/node-yarn-starter/container_registry) 
