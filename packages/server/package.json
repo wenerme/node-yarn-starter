@@ -13,7 +13,7 @@
     "@wenerme/node-yarn-starter-ui": "^1.0.1-alpha.1",
     "body-parser": "^1",
     "cors": "^2",
-    "next": "^9.5",
+    "next": "^12.1",
     "polka": "^0",
     "react": "^16",
     "react-dom": "^16"
